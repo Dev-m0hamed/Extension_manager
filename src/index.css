@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 340px;
+  --breakpoint-md: 580px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1280px;
+
+  --font-Sans: "Noto Sans", sans-serif;
+
+  --color-neutral-0: hsl(200, 60%, 99%);
+  --color-neutral-100: hsl(0, 0%, 93%);
+  --color-neutral-200: hsl(217, 61%, 90%);
+  --color-neutral-300: hsl(0, 0%, 78%);
+  --color-neutral-600: hsl(226, 11%, 37%);
+  --color-neutral-700: hsl(225, 23%, 24%);
+  --color-neutral-800: hsl(226, 25%, 17%);
+  --color-neutral-900: hsl(227, 75%, 14%);
+  --color-red-400: hsl(3, 86%, 64%);
+  --color-red-500: hsl(3, 71%, 56%);
+  --color-red-700: hsl(3, 77%, 44%);
+}
