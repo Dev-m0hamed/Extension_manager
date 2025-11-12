@@ -57,10 +57,12 @@ function Header() {
           </defs>
         </svg>
         <button
+          data-testid="toggleBtn"
           onClick={toggleTheme}
           className="bg-neutral-100 dark:bg-neutral-700 size-[46px] rounded-xl cursor-pointer outline-2 outline-transparent focus:outline-red-400 hover:bg-neutral-300 hover:dark:bg-neutral-600 hover:-translate-y-0.5 relative transition-all duration-300"
         >
           <svg
+            data-testid="sunIcon"
             className={`absolute top-1/2 left-1/2 -translate-1/2 transition duration-300 ${
               isDark ? "opacity-100" : "opacity-0"
             }`}
@@ -86,6 +88,7 @@ function Header() {
             </defs>
           </svg>
           <svg
+            data-testid="moonIcon"
             className={`absolute top-1/2 left-1/2 -translate-1/2 transition duration-300 ${
               isDark ? "opacity-0" : "opacity-100"
             }`}
